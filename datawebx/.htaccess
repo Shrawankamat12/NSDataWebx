@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^main.nsdatawebx.in [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.main.nsdatawebx.in [NC]
+RewriteRule ^(.*)$ http://nsdatawebx.in [L,R=301,NC]

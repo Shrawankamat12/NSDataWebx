@@ -1,0 +1,514 @@
+:root {
+  --primary: #06A3DA;
+  --secondary: #34AD54;
+  --light: #EEF9FF;
+  --dark: #091E3E;
+}
+
+
+/* Header Section */
+
+
+
+.header {
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar base */
+.navbar-nav {
+  width: 100%;
+  padding: 0.7rem 1rem;
+}
+
+/* Logo */
+.logo-event-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Contact Info (Domain, Quick Contact, Phone) */
+.contact-info {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+
+}
+
+.contact-info img {
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.contact-info .text1 {
+  font-size: 14px;
+  margin-left: 6px;
+  font-weight: 500;
+  color: #333;
+
+}
+
+/* Navbar Links */
+.navbar-nav {
+
+  margin-left: 15px;
+  gap: 15px;
+}
+
+.navbar-nav .nav-link {
+
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+
+  color: #007bff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #f58634;
+  border-radius: 8px;
+  padding: 8px 0;
+  min-width: 300px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+/* Right alignment for contact-info + nav */
+.navbar .d-flex {
+  margin-left: auto;
+  /* pushes right side content */
+}
+
+/* Demo Button */
+.glow-on-hover {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #00c851);
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6),
+    0 0 15px rgba(0, 200, 81, 0.6);
+}
+
+/* Main menu */
+.menu {
+  background: #f58634;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu>li>a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu>li>a:hover {
+  width: 400px;
+  background-color: #ddd;
+}
+
+/* Dropdown */
+.submenu {
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 290px;
+  background: #f58634;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  width: 350px;
+  display: none;
+  z-index: 1000px;
+  border: 1px solid #ddd;
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 15px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.submenu li a:hover {
+  display: block;
+  background-color: #ddd;
+}
+
+
+
+/* Show submenu on hover */
+.menu li:hover .submenu {
+  display: block;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.map-section {
+  flex: 1 1 60%;
+  text-align: center;
+  position: relative;
+}
+
+.map-section img {
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  /* border: 1px solid black; */
+}
+
+.content-section {
+  flex: 1 1 35%;
+  padding: 20px;
+}
+
+.button {
+  display: inline-block;
+  background: #f26522;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: #d35400;
+}
+
+.quote-box {
+  margin-top: 40px;
+  background: #fafafa;
+  padding: 20px;
+  border-left: 5px solid #f26522;
+  border-radius: 8px;
+  font-family: "Georgia", serif;
+}
+
+.quote-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.quote-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .map-section,
+  .content-section {
+    flex: 1 1 100%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* prevent jumping */
+  }
+}
+
+/* excellence and expert section */
+
+.container-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1150px;
+  margin-left: 100px;
+}
+
+.my-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.my-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+/* Different hover colors */
+.my-card.excellence::before {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.my-card.experts::before {
+  background: linear-gradient(135deg, #ff9a00, #ff6a00);
+}
+
+.my-card.clients::before {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.my-card.countries::before {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.my-card:hover::before {
+  opacity: 1;
+}
+
+.my-card * {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.my-card:hover h3,
+.card:hover p,
+.card:hover h1 {
+  color: #fff;
+}
+
+.my-card h3 {
+  font-size: 18px;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.my-card h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #000;
+}
+
+.my-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.achivement {
+  /* border: 1px solid black; */
+  max-width: 1150px;
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+}
+
+.achivement-div {
+  margin-left: 100px;
+  margin-top: 45px;
+}
+
+.big-container {
+  min-height: 450px
+}
+
+/* expert and excellence end */
+ 
+
+
+
+/* footer start */
+
+.footer-1 {
+  background: #19363f;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-column-1 {
+  flex: 1;
+  min-width: 220px;
+  margin: 15px;
+}
+
+.footer-column-1 h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-column-1 p {
+  line-height: 2;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-column-1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column-1 ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column-1 ul li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-column-1 ul li a:hover {
+  color: #00ffb3;
+}
+
+.footer-column-1 .contact-info {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #00ffb3;
+}
+
+.social-icons-1 {
+  margin-top: 20px;
+}
+
+.social-icons-1 a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #00b894;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons-1 a:hover {
+  background: #00ffb3;
+  color: #000;
+}
+
+/* copyright */
+
+.footer-bottom-1 {
+  background: #111;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  color: #00b894;
+}
+
+.footer-bottom-1 p {
+  margin: 5px 0;
+}
+
+.footer-bottom-1 a {
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.footer-bottom-1 a:hover {
+  color: #00ffb3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-bottom-1 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* footer end */

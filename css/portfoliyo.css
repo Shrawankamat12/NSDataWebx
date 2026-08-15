@@ -1,0 +1,383 @@
+:root {
+  --primary: #06A3DA;
+  --secondary: #34AD54;
+  --light: #EEF9FF;
+  --dark: #091E3E;
+}
+
+
+/*Navbar Start*/
+.header {
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar base */
+.navbar-nav {
+  width: 100%;
+  padding: 0.7rem 1rem;
+}
+
+/* Logo */
+.logo-event-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Contact Info (Domain, Quick Contact, Phone) */
+.contact-info {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+
+}
+
+.contact-info img {
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.contact-info .text1 {
+  font-size: 14px;
+  margin-left: 6px;
+  font-weight: 500;
+  color: #333;
+
+}
+
+/* Navbar Links */
+.navbar-nav {
+
+  margin-left: 15px;
+  gap: 15px;
+}
+
+.navbar-nav .nav-link {
+
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+
+  color: #007bff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #f58634;
+  border-radius: 8px;
+  padding: 8px 0;
+  min-width: 300px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+/* Right alignment for contact-info + nav */
+.navbar .d-flex {
+  margin-left: auto;
+  /* pushes right side content */
+}
+
+/* Demo Button */
+.glow-on-hover {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #00c851);
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6),
+    0 0 15px rgba(0, 200, 81, 0.6);
+}
+
+/* Main menu */
+.menu {
+  background: #f58634;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu>li>a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu>li>a:hover {
+  width: 400px;
+  background-color: #ddd;
+}
+
+/* Dropdown */
+.submenu {
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 290px;
+  background: #f58634;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  width: 350px;
+  display: none;
+  z-index: 1000px;
+  border: 1px solid #ddd;
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 15px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.submenu li a:hover {
+  display: block;
+  background-color: #ddd;
+}
+
+/* Show submenu on hover */
+.menu li:hover .submenu {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* prevent jumping */
+  }
+}
+
+/*NaVbar End*/
+
+.portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.portfolio p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.filter-buttons {
+  margin-bottom: 30px;
+}
+
+.filter-buttons .filter-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-buttons .filter-btn.active,
+.filter-buttons .filter-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* hide cards when filtered */
+.portfolio-card.hidden {
+  display: none;
+}
+
+/* ===== Advantages Section ===== */
+.advantages-area {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.advantages-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.advantages-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.advantages-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.advantage-box {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 280px;
+}
+
+.advantage-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.advantage-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  background-color: #e0f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-circle img {
+  width: 40px;
+  height: 40px;
+}
+
+.advantage-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.advantage-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Call-to-Action Button */
+.advantages-cta {
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: #00796b;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #004d40;
+  transform: translateY(-3px);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .advantages-title {
+    font-size: 28px;
+  }
+
+  .advantages-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
